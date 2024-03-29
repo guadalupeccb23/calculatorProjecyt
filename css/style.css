@@ -1,0 +1,166 @@
+
+
+/* Element Selector */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Element, Descendant Selectors, grouping */
+header h1,
+main section section strong span {
+    text-align: left;
+    padding: 10px 10px;
+    margin: 10px 0;
+    font-size: 24px;
+    color: #df0aa3;
+}
+
+/* Descendant Selector */
+main > section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Child Selector */
+main > section > section {
+    width: 400px;
+    border: #253a06 1px solid;
+}
+
+/* Adjacent Sibling Selector */
+main > section > section > section + section {
+    margin-top: 10px;
+}
+
+/* General Sibling Selector */
+main > section > section > section ~ section {
+    background-color: rgb(224, 225, 227);
+}
+
+/* Class Selector */
+button {
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Id Selector */
+#result {
+    font-size: 32px;
+}
+
+/* Grouping Selector */
+button,
+main section section strong span {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Pseudo-elements for buttons with class 'operator' */
+button.operator::first-line {
+    
+    font-weight: bold;
+    margin-top: 5px; /* Adjust spacing */
+}
+
+
+/* Specific styling for special buttons */
+button.equals {
+    background-color: #008CBA;
+}
+
+
+/*NEW NEW*/
+/* Descendant Selector */
+.calculator-result strong {
+    color: #333;
+}
+
+.calculator-result span {
+    font-size: 36px;
+    color: #ec0b0b;
+}
+
+/* Child Selector */
+
+
+/* Adjacent Sibling Selector */
+.calculator-row > .operator + .clear {
+    color: darkblue;
+    font-weight: bold;
+    
+}
+
+/* General Sibling Selector */
+.calculator-row > .number ~ .operator {
+    margin-left: 10px;
+}
+
+
+/* Pseudo-classes */
+.calculator-buttons button:hover {
+    background-color: #d6e370;
+}
+
+.calculator-buttons button:active {
+    background-color: #aaa;
+}
+
+/* Class Selector */
+.operator {
+    background-color: #f44336;
+    color: white;
+}
+
+.clear {
+    background-color: #2196F3;
+    color: white;
+}
+
+.backspace {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.function {
+    background-color: #FFC107;
+    color: #333;
+}
+
+.number {
+    background-color: #bdbdbd;
+    color: #333;
+}
+
+.toggle {
+    background-color: #FF9800;
+    color: #333;
+}
+
+.decimal {
+    background-color: #9E9E9E;
+    color: #333;
+}
+
+.equals {
+    background-color: #795548;
+    color: white;
+}
+
+
+
+
+
+
+
